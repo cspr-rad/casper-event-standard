@@ -17,7 +17,7 @@ casper-event-standard-macro = { version = "0.5.0", path = "../casper-event-stand
 serde = { version = "1.0", features = ["derive"], optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-casper-contract = { version = "4.0.0", default-features = false }
+casper-contract = { git = "https://github.com/cspr-rad/casper-node", branch="kairos-demo-1.5.6", default-features = false }
 
 [package.metadata.docs.rs]
 default-target = "wasm32-unknown-unknown"
